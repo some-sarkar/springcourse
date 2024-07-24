@@ -9,6 +9,8 @@ public class Alien {
 	}
 
 	
+	
+	
 	public Alien(int age, Laptop laptop) {
 		super();
 		this.age = age;
