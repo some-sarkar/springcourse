@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+<bean id="alien" class="com.lucifer.demo.Alien">
+
+<!--	<property name="age" value="10"></property>
+	<property name="laptop" ref="laptop"></property>-->
+	
+	<constructor-arg name="age" value="15"></constructor-arg>
+	<constructor-arg name="laptop" ref="laptop"></constructor-arg>
+	
+</bean>
+
+<bean id="laptop" class="com.lucifer.demo.Laptop">
+	<property name="model" value="00110011"></property>
+	<property name="price" value="1000"></property>
+</bean>
+	
+	
+<bean id="cusmoter" class="com.lucifer.bynamebytype.Customer">
+</bean>
+
+<bean id="vehicle" class="com.lucifer.bynamebytype.Car">
+</bean>
+
+<bean id="vehicle" class="com.lucifer.bynamebytype.Bike">
+</bean>
+
+
+
+
+
+
+</beans>

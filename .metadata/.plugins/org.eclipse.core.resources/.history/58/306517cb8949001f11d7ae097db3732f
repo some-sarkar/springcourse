@@ -1,0 +1,27 @@
+package com.lucifer.bynamebytype;
+
+public class Customer {
+	
+	String name;
+	Vehicle vahicle;
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Customer [name=" + name + ", vahicle=" + vahicle + "]";
+	}
+	public Vehicle getVahicle() {
+		return vahicle;
+	}
+	public void setVahicle(Vehicle vahicle) {
+		this.vahicle = vahicle;
+	}
+
+}

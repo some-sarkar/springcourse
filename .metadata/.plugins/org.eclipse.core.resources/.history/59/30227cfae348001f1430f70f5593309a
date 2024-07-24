@@ -1,0 +1,27 @@
+package com.lucifer.demo;
+
+public class Laptop {
+	
+	private int model;
+	private int price;
+	public int getBrand() {
+		return model;
+	}
+	public void setBrand(int brand) {
+		this.model = brand;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Laptop [brand=" + model + ", price=" + price + "]";
+	}
+	
+	
+	
+	
+}
