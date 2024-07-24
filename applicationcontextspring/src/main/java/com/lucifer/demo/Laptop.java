@@ -11,6 +11,7 @@ public class Laptop {
 	public void setModel(int model) {
 		this.model = model;
 	}
+	
 	public int getPrice() {
 		return price;
 	}

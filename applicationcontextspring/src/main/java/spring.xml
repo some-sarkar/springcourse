@@ -15,7 +15,6 @@
 	
 </bean>
 
-
 <bean id="laptop" class="com.lucifer.demo.Laptop">
 	<property name="model" value="00110011"></property>
 	<property name="price" value="1000"></property>
