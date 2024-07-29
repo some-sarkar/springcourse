@@ -6,10 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.lucifer.payment.MakePayment;
 import com.lucifer.payment.PaymentInterface;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

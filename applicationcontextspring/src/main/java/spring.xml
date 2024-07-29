@@ -20,7 +20,6 @@
 	<property name="price" value="1000"></property>
 </bean>-->
 	
-	
 <!-- <bean id="customer" class="com.lucifer.bynamebytype.Customer" autowire="byName">-->
 <bean id="customer" class="com.lucifer.bynamebytype.Customer" autowire="byType">
 	<property name="name" value="Someshwar"></property>
