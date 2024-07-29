@@ -1,8 +1,0 @@
-package com.lucifer.bynamebytype;
-
-public class Customer {
-	
-	String name;
-	Vehicle vahicle;
-
-}

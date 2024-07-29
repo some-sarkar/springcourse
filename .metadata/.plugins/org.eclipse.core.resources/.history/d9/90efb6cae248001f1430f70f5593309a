@@ -1,8 +1,0 @@
-package com.lucifer.demo;
-
-public class Laptop {
-	
-	public void show() {
-		System.out.println("in Laptop");
-	}
-}
