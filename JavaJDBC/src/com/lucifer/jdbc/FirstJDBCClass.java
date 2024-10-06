@@ -18,8 +18,9 @@ public class FirstJDBCClass {
 			
 			Connection con = DriverManager.getConnection(url, username, password);
 			
-			String q = "create table table1(tId int(20) primary key auto_increment,tName varchar(200) not null, tCity varchar(400))";
+			//String q = "create table student(id int(20) primary key auto_increment, name varchar(200) not null, city varchar(400), mobile int(10))";
 			
+			String q = "drop table student";
 			Statement stmt = con.createStatement();
 			stmt.execute(q);
 			System.out.println("Table created");

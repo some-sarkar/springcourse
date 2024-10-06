@@ -14,7 +14,7 @@ public class Select {
 			
 			
 			Connection con = Constant.conObject();
-			String q = "SELECT * FROM table1";
+			String q = "SELECT * FROM student";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(q);
 			System.out.println("ID\t\tName\t\tCity");

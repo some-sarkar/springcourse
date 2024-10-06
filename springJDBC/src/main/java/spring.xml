@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+        
+        <context:component-scan base-package="springJDBC" />
+
+
+	
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="ds">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://sql12.freesqldatabase.com:3306/sql12732466"></property>
+		<property name="username" value="sql12732466"></property>
+		<property name="password" value="iYxHE6IKTD"></property>
+	</bean>
+
+	<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+		<property name="dataSource" ref="ds"></property>
+	</bean>
+	
+	<bean class="springJDBC.dao.StudentDAOImp" id="studentDao">
+		
+	</bean>
+        
+</beans>
